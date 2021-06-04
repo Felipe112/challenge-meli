@@ -1,1 +1,1 @@
-web: java $JAVA_OPTS -Dserver.port=$PORT -jar challenge.jar
+web: java -jar build/libs/*.jar
