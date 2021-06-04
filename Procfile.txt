@@ -1,1 +1,1 @@
-web: java -jar out/artifacts/challenger_jar/challenge.jar
+web: java $JAVA_OPTS -Dserver.port=$PORT -jar challenge.jar
