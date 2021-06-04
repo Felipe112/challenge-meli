@@ -3,6 +3,7 @@ package com.meli.challenge.web.config;
 import com.meli.challenge.web.dto.Response;
 import org.springframework.http.HttpStatus;
 import org.springframework.orm.jpa.JpaSystemException;
+import org.springframework.web.bind.annotation.CrossOrigin;
 import org.springframework.web.bind.annotation.ExceptionHandler;
 import org.springframework.web.bind.annotation.ResponseStatus;
 import org.springframework.web.bind.annotation.RestController;
@@ -10,6 +11,7 @@ import org.springframework.web.bind.annotation.RestController;
 import javax.persistence.PersistenceException;
 
 @RestController
+@CrossOrigin
 public class AbstractRestController {
 
     @ResponseStatus(HttpStatus.INTERNAL_SERVER_ERROR)
