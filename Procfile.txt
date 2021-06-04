@@ -1,1 +1,1 @@
-web: java -jar build/libs/challenge-0.0.1-SNAPSHOT-plain.jar
+web: java -jar out/artifacts/challenger_jar/challenge.jar
