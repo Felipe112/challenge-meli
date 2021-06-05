@@ -47,32 +47,14 @@ bootJar {
     mainClass.set('com.meli.challenge.ChallengeApplication')
    // mainClassName = 'com.meli.challenge.ChallengeApplication'
 }
-
 publishing {
     publications {
-        mavenJava(MavenPublication) {
-            pom {
-                name = 'My Library'
-                description = 'Prueba mercadolibre'
-                url = 'http://www.example.com/library'
-                properties = [
-                        myProp: "value",
-                        "prop.with.dots": "anotherValue"
-                ]
-                licenses {
-                    license {
-                        name = 'The Apache License, Version 2.0'
-                        url = 'http://www.apache.org/licenses/LICENSE-2.0.txt'
-                    }
-                }
-                developers {
-                    developer {
-                        id = 'andres'
-                        name = 'Andres F. Ceballos'
-                        email = 'andres.ceballos.me@gmail.com'
-                    }
-                }
-            }
+        maven(MavenPublication) {
+            groupId = 'com.meli.challenge'
+            artifactId = 'library'
+            version = '1.1'
+
+            from components.java
         }
     }
 }

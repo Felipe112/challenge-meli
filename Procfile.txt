@@ -1,1 +1,1 @@
-web: java -jar build/libs/cha
+web: java -Dserver.port=$PORT -jar target/*.jar
