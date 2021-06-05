@@ -1,6 +1,7 @@
 ## challenge-meli
 Prueba presentada para evaluar el conocimiento de un desarrollador backend, por parte del equipo de Mercadolibre.
 
+
 ##Descripción
 Magneto quiere reclutar la mayor cantidad de mutantes para poder luchar contra los X-Men.
 
@@ -81,9 +82,10 @@ la de lectura o viseversa.
 * [Lombok](https://projectlombok.org)
 * [Swagger](https://swagger.io)
 * [JPA](https://spring.io/guides/gs/accessing-data-jpa/)
-* [H2](https://www.baeldung.com/spring-boot-h2-database)
+* [Postgres](https://www.postgresql.org/)
 * [Sprint Boot](https://spring.io/projects/spring-boot)
 
 
-
+#SWAGGER
+https://challente-meli2.herokuapp.com/swagger-ui.html#/mutant-controller
 
