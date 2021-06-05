@@ -36,15 +36,23 @@ test {
     useJUnitPlatform()
 }
 
+
+
+
+
 jar {
+    baseName = 'challenge-meli'
+    version = '0.0.1'
     manifest {
-        attributes 'Main-Class': 'com.meli.challenge.ChallengeApplication'
+        attributes "Manifest-Version": 1.0,
+                'Main-Class': 'com.meli.challenge.ChallengeApplicatio'
     }
 }
 
+
 springBoot {
     manifest {
-        attributes 'Start-Class': 'com.meli.challenge.ChallengeApplication'
+        attributes ('Main-Class': 'com.meli.challenge.ChallengeApplication')
     }
     //mainClassName = 'com.meli.challenge.ChallengeApplication'
 }
@@ -54,3 +62,4 @@ bootJar {
         attributes 'Start-Class': 'com.meli.challenge.ChallengeApplication'
     }
 }
+
